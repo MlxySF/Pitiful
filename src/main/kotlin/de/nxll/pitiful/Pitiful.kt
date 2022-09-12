@@ -29,7 +29,9 @@ class Pitiful {
     }
 
     private fun registerCommands() {
-        ClientCommandHandler.instance.registerCommand(PitifulCommand())
+        arrayOf(
+            PitifulCommand()
+        ).forEach(ClientCommandHandler.instance::registerCommand)
     }
 
     @EventHandler
