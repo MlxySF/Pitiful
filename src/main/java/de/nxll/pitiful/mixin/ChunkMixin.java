@@ -14,7 +14,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(Chunk.class)
 public abstract class ChunkMixin {
 
-    @Shadow public abstract IBlockState getBlockState(BlockPos pos);
+    @Shadow
+    public abstract IBlockState getBlockState(BlockPos pos);
 
     private IBlockState previousState = null;
 
