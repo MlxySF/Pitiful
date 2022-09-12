@@ -1,0 +1,13 @@
+[
+  {
+    "modid": "pitiful",
+    "name": "Pitiful",
+    "description": "Nxllpointers funny haha half legit and barely working pit mod",
+    "version": "${version}",
+    "mcversion": "1.8.9",
+    "authorList": [
+      "Nxllpointer"
+    ],
+    "logoFile": "assets/hopper.png"
+  }
+]

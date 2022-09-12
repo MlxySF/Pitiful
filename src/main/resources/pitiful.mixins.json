@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "de.nxll.pitiful.mixin",
+  "refmap": "pitiful.refmap.json",
+  "client": [
+    "ChunkMixin",
+    "MainMenuMixin"
+  ]
+}
