@@ -27,7 +27,7 @@ class PitifulVigilant : Vigilant(
         category = "ESP",
         subcategory = "Sewers",
         name = "Max Delay",
-        description = "Max delay between chat message and cheat appearance for detection",
+        description = "Max delay between chat message and chest appearance for detection",
         type = PropertyType.SLIDER,
         min = 0,
         max = 20
