@@ -9,7 +9,7 @@ import net.minecraftforge.client.ClientCommandHandler
 import net.minecraftforge.common.MinecraftForge
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.common.Mod.EventHandler
-import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent
+import net.minecraftforge.fml.common.event.FMLInitializationEvent
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 import net.minecraftforge.fml.common.gameevent.TickEvent
 
@@ -35,7 +35,7 @@ class Pitiful {
     }
 
     @EventHandler
-    fun onLoadComplete(event: FMLLoadCompleteEvent) {
+    fun onInitialization(event: FMLInitializationEvent) {
         config = PitifulVigilant()
 
         MinecraftForge.EVENT_BUS.register(this)
