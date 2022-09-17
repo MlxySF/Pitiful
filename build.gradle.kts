@@ -50,11 +50,22 @@ dependencies {
 loom {
     noServerRunConfigs()
 
-    launches {
+    runs {
         getByName("client") {
+            client()
+
+            programArgs(
+                "--tweakClass", "gg.essential.loader.stage0.EssentialSetupTweaker",
+                "--mixin", "pitiful.mixins.json"
+            )
+        }
+
+        create("clientDev") {
+            inherit(getByName("client"))
+            configName = "Minecraft Dev Client"
+
             property("mixin.debug", "true")
-            arg("--tweakClass", "gg.essential.loader.stage0.EssentialSetupTweaker")
-            arg("--mixin", "pitiful.mixins.json")
+            property("pitiful.dev", "true")
         }
     }
 
